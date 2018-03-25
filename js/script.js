@@ -12,8 +12,9 @@ function searchCountries(){
 
 function showCountriesList(resp){
   countriesList.empty();
+
   resp.forEach(function(item) {
-    $('<li>').text(item.name).appendTo(countriesList);
+    $('<li>').text(item.name + ', capital: ' + item.capital).appendTo(countriesList);
   })
 }
 
