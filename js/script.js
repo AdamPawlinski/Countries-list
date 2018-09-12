@@ -20,4 +20,4 @@ $(function(){
   }
 
   $('#search').on('click', searchCountries);
-}
+})
